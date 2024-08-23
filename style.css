@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Grey+Qo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    font-family: 'Bebas Neue', 'Calibri', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background-image: url(./images/weatherBig.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.container {
+    width: 400px;
+    font-size: 1.5rem;
+    text-align: center;
+    flex-direction: column;
+    background-color: #53575cad;
+    padding: 20px;
+    box-shadow: 0 0 40px #ffffff;
+    border-radius: 20px;
+}
+
+label {
+    font-family: 'Dancing Script', sans-serif;
+}
+
+input {
+    border-radius: 20px;
+    padding: 5px 10px;
+
+    &:focus {
+        outline-color: #92209f;
+    }
+}
+
+#weatherInfo {
+    height: 250px;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 50px;
+}
+
+#weatherIcon {
+    transform: scale(1.6);
+}
+
+button {
+    padding: 5px;
+    border-radius: 7px;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+#city {
+    background-image: linear-gradient(to left, violet, indigo, green, cyan, orange);
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+@media(max-width: 750px) {
+    body {
+        background-image: url(./images/weatherBG.png);
+        height: 700px;
+    }
+
+    .container {
+        width: 370px;
+    }
+
+}
